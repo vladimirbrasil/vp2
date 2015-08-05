@@ -18,3 +18,49 @@ Informe sua violencia. login (avatar). Idade?
 quantos de casa, familiares, conhecidos - homic/roub.
 Informo a estimativa de taxa de homic/roub para a regiao.
 
+__
+
+my-shake (element) > animação encapsulada.
+
+core-list (iron-list) > cartões contendo estatísticas! - loop infinito
+https://elements.polymer-project.org/elements/iron-list
+
+Aplicar formatação para componentes (que usaram @apply --the-componentcontainer-theme etc.)
+styles/app-theme.html
+
+<style is="custom-style">
+  --the-component-container-theme {
+    background-color: #fff;
+    color: #fff;
+    box-shadow: 0 0 0 1px #aad6df inset, 0 1px 2px 0 rgba(0,0,0,.05);    
+  };
+  --the-component-header-theme {
+
+  };
+</style>
+
+
+<button is="fancy-button"></button>   | herda comportamentos do button (tab, focus, etc)
+se fosse <fancy-button></fancy-button> não herdaria comportamentos padrão do button.
+idem para:
+<input is="fancy-input"></input>  | etc. Quando se quer manter o comportamento padrão do controle
+
+__
+
+Offline
+https://jakearchibald.com/2014/offline-cookbook/
+http://www.html5rocks.com/en/tutorials/service-worker/introduction/
+https://www.youtube.com/watch?v=BucGrYACJdQ&list=PLOU2XLYxmsII5c3Mgw6fNYCzaWrsM3sMN&index=4
+
+__
+
+Behaviors!
+
+Polymer ({
+  is: fancy-menu,
+  behaviors: [SelectorBehavior, MultiSelectBehavior, RippleBehavior]
+})
+
+iron-validatable-behavior
+iron-a11-keys-behavior
+neon-animation
